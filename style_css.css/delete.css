@@ -1,0 +1,85 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d9534f; /* Red color to highlight the delete action */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form and Labels */
+form p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+}
+
+form input[type="hidden"] {
+    display: none;
+}
+
+/* Buttons */
+input[type="submit"] {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"][name="delete"] {
+    background-color: #d9534f;
+    color: white;
+}
+
+input[type="submit"][name="delete"]:hover {
+    background-color: #c9302c;
+}
+
+input[type="submit"][name="cancel"] {
+    background-color: #5bc0de;
+    color: white;
+}
+
+input[type="submit"][name="cancel"]:hover {
+    background-color: #31b0d5;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    input[type="submit"] {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
